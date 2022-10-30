@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage Members | Electronics & Home Decor online Sri Lanka</title>
+    <link rel="icon" href="resources/system/logo.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/alertify.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- header -->
+            <nav class="navbar bg-light border-0 border-bottom border-1 border-secondary border-opacity-25">
+                <div class="container-fluid">
+                    <a class=" text-dark fs-4 text-decoration-none" href="#staticBackdrop" data-bs-toggle="offcanvas"
+                        aria-controls="staticBackdrop" role="button">
+                        <i class="bi bi-list me-2"></i>
+                    </a>
+                    <a href="admin-panel.html" class="offcanvas-title logo text-uppercase text-decoration-none"
+                        id="staticBackdropLabel" style="cursor: pointer;">
+                        <span class="text-danger">n</span><span class="text-dark">ew</span><span class="text-danger">
+                            t</span><span class="text-dark">ech</span>
+                    </a>
+                    <!-- /.offcanvas -->
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="staticBackdrop"
+                        aria-labelledby="staticBackdropLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title logo text-uppercase" id="staticBackdropLabel">
+                                <span class="text-danger">n</span><span class="text-dark">ew</span><span
+                                    class="text-danger"> t</span><span class="text-dark">ech</span>
+                            </h5>
+                            <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <hr />
+                        <div class="offcanvas-body mt-3">
+                            <div class="bg-light p-2 text-capitalize rounded-3 my-2">
+                                <i class="bi bi-speedometer me-4"></i>dashboard
+                            </div>
+                            <div class="bg-light p-2 text-capitalize rounded-3 my-2">
+                                <i class="bi bi-list-ul me-4"></i>categories
+                            </div>
+                            <div class="bg-light p-2 text-capitalize rounded-3 my-2">
+                                <i class="bi bi-bag me-4"></i><a href="add-item.html"
+                                    class="text-decoration-none link-dark">items</a>
+                            </div>
+                            <div class="bg-danger bg-opacity-50 p-2 text-capitalize rounded-3 my-2">
+                                <i class="bi bi-people me-4"></i><a href="manage-users.html" class="text-decoration-none link-dark">manage members</a>
+                            </div>
+                            <div class="bg-light p-2 text-capitalize rounded-3 my-2">
+                                <i class="bi bi-gear me-4"></i>admins
+                            </div>
+                        </div>
+                    </div>
+                    <form class="d-flex">
+                        <span class="text-danger fs-4" data-bs-toggle="tooltip" data-bs-placement="left"
+                            data-bs-title="My Account">
+                            <i class="bi bi-person-circle"></i>
+                        </span>
+                    </form>
+                </div>
+            </nav>
+            <!-- header -->
+
+            <!-- page content -->
+            <div class="col-12">
+                <div class="row bg-light py-3">
+                    <span class="text-dark fw-bold fs-5 text-start text-uppercase">
+                        <i class="bi bi-people me-2"></i>manage members
+                    </span>
+                </div>
+                <div class="row mt-3">
+                    <section>
+                        <div class="table-responsive" id="no-more-tables">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                        <th>Username</th>
+                                        <th>Password</th>
+                                        <th>Joined at</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-title="#">1</td>
+                                        <td data-title="First Name">Keshara</td>
+                                        <td data-title="Last Name">Ranasinghe</td>
+                                        <td data-title="Username">Kesh123</td>
+                                        <td data-title="Password">kjhaahha4jal54as5</td>
+                                        <td data-title="Joined at">26/07/2022 14:05:30</td>
+                                        <td data-title="Action">
+                                            <div class="col-12">
+                                                <button class="btn btn-danger shadow-none">Block</button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="#">2</td>
+                                        <td data-title="First Name">Sandaru</td>
+                                        <td data-title="Last Name">Gunatilaka</td>
+                                        <td data-title="Username">San23</td>
+                                        <td data-title="Password">kjhaksndl4jal54as5</td>
+                                        <td data-title="Joined at">29/07/2022 14:05:30</td>
+                                        <td data-title="Action">
+                                            <div class="col-12">
+                                                <button class="btn btn-danger shadow-none">Block</button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!-- page content -->
+
+
+            <!-- footer -->
+            <div
+                class="navbar bg-light fixed-bottom border-0 border-top border-1 border-secondary border-opacity-25">
+                <div class="container-fluid justify-content-center mt-1">
+                    <p class="text-center">&copy; 2022 NewTech.lk | All Right Reserved.</p>
+                </div>
+            </div>
+            <!-- footer -->
+
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll(
+            '[data-bs-toggle="tooltip"]'
+        );
+        const tooltipList = [...tooltipTriggerList].map(
+            (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+        );
+    </script>
+</body>
+
+</html>
