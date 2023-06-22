@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEW TECH | Electronics & Home Decor online Sri Lanka</title>
+  <link rel="icon" href="resources/system/logo.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/alertify.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+
+      <!-- header -->
+      <nav class="navbar navbar-expand-lg bg-light border-0 border-bottom border-1 border-secondary">
+        <div class="container-fluid">
+          <!-- /.logo -->
+          <span class="navbar-brand text-uppercase logo">
+            <span class="text-danger">n</span><span class="text-dark">ew</span><span class="text-danger"> t</span><span
+              class="text-dark">ech</span>
+          </span>
+          <!-- /.mobile view only buttons -->
+          <button class="d-flex d-lg-none btn btn-outline-danger shadow-none rounded-pill me-2">
+            <i class="bi bi-cart3"></i>
+          </button>
+          <button class="d-flex d-lg-none btn btn-outline-danger shadow-none rounded-pill me-2">
+            <i class="bi bi-heart"></i>
+          </button>
+          <!-- /.toggle button -->
+          <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- /.navbar item -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- /.navbar left side item -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Help & Contact</a>
+              </li>
+              <li class="nav-item d-flex d-lg-none">
+                <a class="nav-link" aria-current="page" href="customer.html">Register / Login</a>
+              </li>
+            </ul>
+            <!-- /.navbar right side item -->
+            <form class="d-none d-lg-flex">
+              <a href="cart.html" class="btn btn-outline-danger shadow-none rounded-pill me-2" data-bs-toggle="tooltip"
+                data-bs-placement="bottom" data-bs-title="Your Cart">
+                <i class="bi bi-cart3"></i>
+              </a>
+              <a href="watchlist.html" class="btn btn-outline-danger shadow-none rounded-pill me-2" data-bs-toggle="tooltip"
+                data-bs-placement="bottom" data-bs-title="Watch List">
+                <i class="bi bi-heart"></i>
+              </a>
+              <a href="customer.html" class="btn btn-outline-danger shadow-none rounded-pill text-capitalize">
+                <i class="bi bi-person-x me-2"></i>register / login
+              </a>
+            </form>
+          </div>
+          <!-- navbar item./ -->
+        </div>
+      </nav>
+      <!-- header -->
+
+      <!-- search -->
+      <div class="col-12 bg-light">
+        <div class="row">
+          <div class="col-12 offset-lg-2 col-lg-8 mt-4 pb-3">
+            <div class="row">
+              <!-- /.logo -->
+              <div class="d-none d-lg-flex col-lg-1">
+                <img src="resources/system/logo.png" style="width: 50px" class="img-fluid" />
+              </div>
+              <!-- /.input -->
+              <div class="col-12 col-lg-8 pt-lg-2 mb-3 mb-lg-0">
+                <div class="input-group">
+                  <input type="text" class="form-control shadow-none" placeholder="Search what you are looking for. . ."
+                    aria-describedby="search" />
+                  <button class="btn btn-outline-secondary shadow-none" type="button" id="search">
+                    <i class="bi bi-search"></i>
+                  </button>
+                </div>
+              </div>
+              <!-- /.advanced -->
+              <div class="col-12 col-lg-3 pt-lg-2">
+                  <a href="advance.html" class="btn btn-outline-secondary shadow-none col-12" type="button" id="search">
+                    Advance
+                  </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- search -->
+
+      <!-- carousel -->
+      <div class="d-none d-lg-flex col-12 py-4">
+        <div class="row align-self-center">
+          <div id="carouselExampleDark" class="offset-2 col-8 carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="resources/sliders/img1.jpg" class="d-block w-100" alt="" />
+                <div class="carousel-caption d-none d-md-block">
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="resources/sliders/img2.jpg" class="d-block w-100" alt="" />
+                <div class="carousel-caption d-none d-md-block">
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="resources/sliders/img3.jpg" class="d-block w-100" alt="" />
+                <div class="carousel-caption d-none d-md-block">
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- carousel -->
+
+      <!-- home page img for mobile view -->
+      <div class="d-flex d-lg-none col-12">
+        <div class="row text-center">
+          <img src="resources/sliders/img3.jpg" class="img-fluid opacity-25" />
+          <h2 class="text-dark text-capitalize position-absolute mt-4 pt-1 mb-3" style="font-weight: 700;">always choose
+            good</h2>
+          <span class="text-dark position-absolute mt-5 pt-5 fs-6">Lorem ipsum dolor sit, amet consectetur adipisicing
+            elit. Sapiente inventore aliquam repellat officia minima consectetur vero eligendi, nemo possimus
+            accusamus.</span>
+        </div>
+      </div>
+      <!-- home page img for mobile view -->
+
+      <!-- categories -->
+
+      <!-- /.1st ctegory -->
+      <div class="col-12 my-3">
+        <div class="row bg-light py-3">
+          <span class="text-dark fw-bold fs-5 text-start text-uppercase">
+            home accesories
+            <i class="ms-2 bi bi-arrow-right" data-bs-toggle="tooltip"
+            data-bs-placement="right" data-bs-title="View All"></i>
+          </span>
+        </div>
+        <div class="row bg-white">
+          <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-4">
+
+            <!-- /.card -->
+            <div class="col">
+              <div class="card h-100 shadow">
+                <img src="resources/products/wmchine.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title text-capitalize fw-bold">washing machine</h6>
+                  <p class="card-text">Rs.100,000.00</p>
+                  <button class="btn btn-outline-warning shadow-none text-capitalize">buy now</button>
+                  <button class="btn btn-outline-success shadow-none">
+                    <i class="bi bi-cart3"></i>
+                  </button>
+                  <button class="btn btn-outline-danger shadow-none">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- /.card -->
+            <div class="col">
+              <div class="card h-100 shadow">
+                <img src="resources/products/fan.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title text-capitalize fw-bold">stand fan</h6>
+                  <p class="card-text">Rs.19,000.00</p>
+                  <button class="btn btn-outline-warning shadow-none text-capitalize">buy now</button>
+                  <button class="btn btn-outline-success shadow-none">
+                    <i class="bi bi-cart3"></i>
+                  </button>
+                  <button class="btn btn-outline-danger shadow-none">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- /.card -->
+            <div class="col">
+              <div class="card h-100 shadow">
+                <img src="resources/products/grinder.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title text-capitalize fw-bold">mixer grinder</h6>
+                  <p class="card-text">Rs.25,000.00</p>
+                  <button class="btn btn-outline-warning shadow-none text-capitalize">buy now</button>
+                  <button class="btn btn-outline-success shadow-none">
+                    <i class="bi bi-cart3"></i>
+                  </button>
+                  <button class="btn btn-outline-danger shadow-none">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- /.card -->
+            <div class="col">
+              <div class="card h-100 shadow">
+                <img src="resources/products/fridge.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title text-capitalize fw-bold">double door fridge</h6>
+                  <p class="card-text">Rs.90,000.00</p>
+                  <button class="btn btn-outline-warning shadow-none text-capitalize">buy now</button>
+                  <button class="btn btn-outline-success shadow-none">
+                    <i class="bi bi-cart3"></i>
+                  </button>
+                  <button class="btn btn-outline-danger shadow-none">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- /.card -->
+            <div class="col">
+              <div class="card h-100 shadow">
+                <img src="resources/products/tv.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title text-capitalize fw-bold">smart LED TV 40''</h6>
+                  <p class="card-text">Rs.120,000.00</p>
+                  <button class="btn btn-outline-warning shadow-none text-capitalize">buy now</button>
+                  <button class="btn btn-outline-success shadow-none">
+                    <i class="bi bi-cart3"></i>
+                  </button>
+                  <button class="btn btn-outline-danger shadow-none">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+      <!-- /.2nd ctegory -->
+      <div class="col-12 my-3">
+        <div class="row bg-light py-3">
+          <span class="text-dark fw-bold fs-5 text-start text-uppercase">
+            office accesories
+            <i class="ms-2 bi bi-arrow-right" data-bs-toggle="tooltip"
+            data-bs-placement="right" data-bs-title="View All"></i>
+          </span>
+        </div>
+        <div class="row bg-white">
+          <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-4">
+
+            <!-- /.card -->
+            <div class="col">
+              <div class="card h-100 shadow">
+                <img src="resources/products/monitor.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title text-capitalize fw-bold">samsung LED monitor 34''</h6>
+                  <p class="card-text">Rs.80,000.00</p>
+                  <button class="btn btn-outline-warning shadow-none text-capitalize">buy now</button>
+                  <button class="btn btn-outline-success shadow-none">
+                    <i class="bi bi-cart3"></i>
+                  </button>
+                  <button class="btn btn-outline-danger shadow-none">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- /.card -->
+            <div class="col">
+              <div class="card h-100 shadow">
+                <img src="resources/products/laptop.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title text-capitalize fw-bold">MSI gaming laptop 17.3'' </h6>
+                  <p class="card-text">Rs.219,000.00</p>
+                  <button class="btn btn-outline-warning shadow-none text-capitalize">buy now</button>
+                  <button class="btn btn-outline-success shadow-none">
+                    <i class="bi bi-cart3"></i>
+                  </button>
+                  <button class="btn btn-outline-danger shadow-none">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- /.card -->
+            <div class="col">
+              <div class="card h-100 shadow">
+                <img src="resources/products/logitech.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title text-capitalize fw-bold">logitech wireless combo MK620</h6>
+                  <p class="card-text">Rs.17,000.00</p>
+                  <button class="btn btn-outline-warning shadow-none text-capitalize">buy now</button>
+                  <button class="btn btn-outline-success shadow-none">
+                    <i class="bi bi-cart3"></i>
+                  </button>
+                  <button class="btn btn-outline-danger shadow-none">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- /.card -->
+            <div class="col">
+              <div class="card h-100 shadow">
+                <img src="resources/products/ipad.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title text-capitalize fw-bold">apple iPad pro 11''</h6>
+                  <p class="card-text">Rs.190,000.00</p>
+                  <a href="single-product-view.html" class="btn btn-outline-warning shadow-none text-capitalize">buy now</a>
+                  <button class="btn btn-outline-success shadow-none">
+                    <i class="bi bi-cart3"></i>
+                  </button>
+                  <button class="btn btn-outline-danger shadow-none">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- /.card -->
+            <div class="col">
+              <div class="card h-100 shadow">
+                <img src="resources/products/printer.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title text-capitalize fw-bold">canon pixma e410</h6>
+                  <p class="card-text">Rs.90,000.00</p>
+                  <button class="btn btn-outline-warning shadow-none text-capitalize">buy now</button>
+                  <button class="btn btn-outline-success shadow-none">
+                    <i class="bi bi-cart3"></i>
+                  </button>
+                  <button class="btn btn-outline-danger shadow-none">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+      <!-- /.3rd ctegory -->
+      <div class="col-12 my-3">
+        <div class="row bg-light py-3">
+          <span class="text-dark fw-bold fs-5 text-start text-uppercase">
+            cameras & accesories
+            <i class="ms-2 bi bi-arrow-right" data-bs-toggle="tooltip"
+            data-bs-placement="right" data-bs-title="View All"></i>
+          </span>
+        </div>
+        <div class="row bg-white">
+          <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-4">
+
+            <!-- /.card -->
+            <div class="col">
+              <div class="card h-100 shadow">
+                <img src="resources/products/camera.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title text-capitalize fw-bold">canon EOS 3000D</h6>
+                  <p class="card-text">Rs.120,000.00</p>
+                  <button class="btn btn-outline-warning shadow-none text-capitalize">buy now</button>
+                  <button class="btn btn-outline-success shadow-none">
+                    <i class="bi bi-cart3"></i>
+                  </button>
+                  <button class="btn btn-outline-danger shadow-none">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      <!-- /.4th ctegory -->
+      <div class="col-12 my-3">
+        <div class="row bg-light py-3">
+          <span class="text-dark fw-bold fs-5 text-start text-uppercase">
+            bulbs & batteries
+            <i class="ms-2 bi bi-arrow-right" data-bs-toggle="tooltip"
+            data-bs-placement="right" data-bs-title="View All"></i>
+          </span>
+        </div>
+        <div class="row bg-white">
+          <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-4">
+
+            <!-- /.card -->
+            <div class="col">
+              <div class="card h-100 shadow">
+                <img src="resources/products/light.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 class="card-title text-capitalize fw-bold">ring light 26cm</h6>
+                  <p class="card-text">Rs.8,000.00</p>
+                  <button class="btn btn-outline-warning shadow-none text-capitalize">buy now</button>
+                  <button class="btn btn-outline-success shadow-none">
+                    <i class="bi bi-cart3"></i>
+                  </button>
+                  <button class="btn btn-outline-danger shadow-none">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+        </div>
+      </div>
+
+      <!-- categories -->
+
+      <!-- footer -->
+      <footer class="bg-dark text-light mt-3 pt-5 pb-4">
+        <div class="container text-center text-lg-start">
+          <div class="row text-center text-lg-start">
+
+            <!-- /.new tec -->
+            <div class="col-md-5 col-lg-7 mx-auto mt-3 d-none d-lg-block">
+              <h5 class="text-uppercase fw-semibold mb-4 text-danger">new tech</h5>
+              <hr class="mb-4">
+
+              <p class="text-light">
+                Here we are the NewTech.lk&trade; to support you for accomplish your dessire by selling high quality
+                products. You can buy the products of internationally recognized brands of the highest quality through
+                us.
+              </p>
+              <div class="row bg-light rounded px-3 justify-content-center bg-opacity-25">
+                <div class="col-3">
+                  <img src="resources/payments/visa.svg" alt="visa" class="img-fluid" style="width: 60px;" />
+                </div>
+                <div class="col-3">
+                  <img src="resources/payments/mastercard.svg" alt="visa" class="img-fluid" style="width: 60px;" />
+                </div>
+                <div class="col-3">
+                  <img src="resources/payments/amex.svg" alt="visa" class="img-fluid" style="width: 60px;" />
+                </div>
+                <div class="col-3">
+                  <img src="resources/payments/maestro.svg" alt="visa" class="img-fluid" style="width: 60px;" />
+                </div>
+              </div>
+            </div>
+
+            <!-- /.empty -->
+            <div class="col-md-1 col-lg-1 mx-auto mt-3 d-none d-lg-block"></div>
+
+            <!-- /.policy -->
+            <div class="col-md-3 col-lg-2 mx-auto mt-3 d-none d-lg-block">
+              <h5 class="text-uppercase mb-4 fw-semibold text-danger">Policy</h5>
+              <hr class="mb-4">
+              <p>
+                <a href="#" class="text-light" style="text-decoration: none;">Terms & Conditions</a>
+              </p>
+              <p>
+                <a href="#" class="text-light" style="text-decoration: none;">Privacy Policy</a>
+              </p>
+            </div>
+
+            <!-- /.about -->
+            <div class="col-md-3 col-lg-2 mx-auto mt-3 d-none d-lg-block">
+              <h5 class="text-uppercase mb-4 fw-semibold text-danger">about</h5>
+              <hr class="mb-4">
+              <p>
+                <a href="#" class="text-light" style="text-decoration: none;">About Us</a>
+              </p>
+            </div>
+
+            <!-- /.rapid links -->
+            <div class="col-md-4 mx-auto mt-3 d-lg-none">
+              <h5 class="text-uppercase mb-4 fw-semibold text-danger">rapid links</h5>
+              <hr class="mb-4">
+              <p>
+                <a href="#" class="text-light text-capitalize" style="text-decoration: none;">About Us</a>
+              </p>
+              <p>
+                <a href="#" class="text-light text-capitalize" style="text-decoration: none;">Terms &
+                  Conditions</a>
+              </p>
+              <p>
+                <a href="#" class="text-light text-capitalize" style="text-decoration: none;">Contact Us</a>
+              </p>
+            </div>
+
+          </div>
+
+          <!-- /.scoial media & cpy right -->
+          <hr class="mb-4">
+          <div class=" row d-flex justify-content-center">
+            <div>
+              <p class="text-center text-uppercase fw-semibold">follow us on social media</p>
+            </div>
+            <div class="text-center ">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a href="#" class="text-light"><i class="bi bi-facebook"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-light"><i class="bi bi-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="row d-flex justify-content-center d-none d-lg-block">
+              <div>
+                <p class="text-center" style="font-size: 12px;">
+                  Copyright &copy; New Tech &trade;. All rights reserved. The New Tech name, logos, and related marks
+                  are
+                  trademarks of New Tech, Inc.
+                </p>
+              </div>
+            </div>
+
+            <div class=" row d-flex justify-content-center d-lg-none">
+              <div>
+                <p class="text-center" style="font-size: 13px;">
+                  Copyright &copy; New Tech Sri Lanka.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </footer>
+      <!-- footer -->
+
+    </div>
+  </div>
+
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/script.js"></script>
+  <!-- tooltip -->
+  <script>
+    const tooltipTriggerList = document.querySelectorAll(
+      '[data-bs-toggle="tooltip"]'
+    );
+    const tooltipList = [...tooltipTriggerList].map(
+      (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+    );
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Item | Electronics & Home Decor online Sri Lanka</title>
+    <link rel="icon" href="resources/system/logo.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/alertify.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- header -->
+            <nav class="navbar bg-light border-0 border-bottom border-1 border-secondary border-opacity-25">
+                <div class="container-fluid">
+                    <a class=" text-dark fs-4 text-decoration-none" href="#staticBackdrop" data-bs-toggle="offcanvas"
+                        aria-controls="staticBackdrop" role="button">
+                        <i class="bi bi-list me-2"></i>
+                    </a>
+                    <a href="admin-panel.html" class="offcanvas-title logo text-uppercase text-decoration-none"
+                        id="staticBackdropLabel" style="cursor: pointer;">
+                        <span class="text-danger">n</span><span class="text-dark">ew</span><span class="text-danger">
+                            t</span><span class="text-dark">ech</span>
+                    </a>
+                    <!-- /.offcanvas -->
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="staticBackdrop"
+                        aria-labelledby="staticBackdropLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title logo text-uppercase" id="staticBackdropLabel">
+                                <span class="text-danger">n</span><span class="text-dark">ew</span><span
+                                    class="text-danger"> t</span><span class="text-dark">ech</span>
+                            </h5>
+                            <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <hr />
+                        <div class="offcanvas-body mt-3">
+                            <div class="bg-light p-2 text-capitalize rounded-3 my-2">
+                                <i class="bi bi-speedometer me-4"></i>dashboard
+                            </div>
+                            <div class="bg-light p-2 text-capitalize rounded-3 my-2">
+                                <i class="bi bi-list-ul me-4"></i>categories
+                            </div>
+                            <div class="bg-danger bg-opacity-50 p-2 text-capitalize rounded-3 my-2">
+                                <i class="bi bi-bag me-4"></i><a href="add-item.html"
+                                    class="text-decoration-none link-dark">items</a>
+                            </div>
+                            <div class="bg-light p-2 text-capitalize rounded-3 my-2">
+                                <i class="bi bi-people me-4"></i>manage members
+                            </div>
+                            <div class="bg-light p-2 text-capitalize rounded-3 my-2">
+                                <i class="bi bi-gear me-4"></i>admins
+                            </div>
+                        </div>
+                    </div>
+                    <form class="d-flex">
+                        <span class="text-danger fs-4" data-bs-toggle="tooltip" data-bs-placement="left"
+                            data-bs-title="My Account">
+                            <i class="bi bi-person-circle"></i>
+                        </span>
+                    </form>
+                </div>
+            </nav>
+            <!-- header -->
+
+            <!-- page content -->
+            <div class="col-12">
+                <div class="row bg-light py-3">
+                    <span class="text-dark fw-bold fs-5 text-start text-uppercase">
+                        <i class="bi bi-bag-plus me-2"></i>add item
+                    </span>
+                </div>
+                <div class="row mx-auto mt-3">
+                    <!-- 1st row -->
+
+                                <!-- select category -->
+                                <div class="col-12 col-lg-4">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <label class="form-label fw-bold lbl1">Select Product Category</label>
+                                        </div>
+
+                                        <div class="col-12 mb-3">
+                                            <select class="form-select" id="category">
+                                                <option value="0">Select Category</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- select category -->
+
+                                <!-- select produc brand -->
+                                <div class="col-12 col-lg-4">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <label class="form-label fw-bold lbl1">Select Product Brand</label>
+                                        </div>
+
+                                        <div class="col-12 mb-3">
+                                            <select class="form-select" id="brand">
+                                                <option value="0">Select Brand</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- select produc brand -->
+
+                                <!-- select produc model -->
+                                <div class="col-12 col-lg-4">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <label class="form-label fw-bold lbl1">Select Product Model</label>
+                                        </div>
+
+                                        <div class="col-12 mb-3">
+                                            <select class="form-select" id="model">
+                                                <option value="0">Select Model</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- select produc model -->
+                                <div class="col-12">
+                                    <hr class="hr-break-1" />
+                                </div>
+
+                                <!-- 1st row -->
+
+                                <!-- 2nd row -->
+                                <div class="col-12 mb-3">
+                                    <div class="row">
+
+                                        <div class="col-12 ">
+                                            <label class="form-label fw-bold lbl1">Add a Tittle to Your Product</label>
+                                        </div>
+
+                                        <div class="offset-0 offset-lg-2 col-12 col-lg-8">
+                                            <input type="text" class="form-control" id="title"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <hr class="hr-break-1" />
+                                </div>
+                                <!-- 2nd row -->
+
+                                <!-- 3rd row -->
+                                <div class="col-12 mb-3">
+                                    <div class="row">
+
+                                        <!-- 1st col -->
+                                        <div class="col-12 col-lg-4">
+                                            <div class="row">
+
+                                                <div class="col-12 ">
+                                                    <label class="form-label fw-bold lbl1">Select Product Condition</label>
+                                                </div>
+                                                <div class="offset-1 col-11 col-lg-3 ms-5 form-check">
+                                                    <input class="form-check-input" type="radio" name="condition" id="bn" checked>
+                                                    <label class="form-check-label" for="bn">
+                                                        Brand New
+                                                    </label>
+                                                </div>
+
+                                                <div class="offset-1 col-11 col-lg-3 ms-5 form-check">
+                                                    <input class="form-check-input" type="radio" name="condition" id="us">
+                                                    <label class="form-check-label" for="us">
+                                                        Used
+                                                    </label>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <!-- 1st col -->
+
+                                        <!-- 2nd col -->
+                                        <div class="col-12 col-lg-4">
+                                            <div class="row">
+                                                <div class="col-12 ">
+                                                    <label class="form-label fw-bold lbl1">Select Product Color</label>
+                                                </div>
+
+                                                <div class="offset-1 offset-lg-0 col-5 col-lg-4 form-check">
+                                                    <input class="form-check-input" type="radio" name="clrradio" id="clr1" checked>
+                                                    <label class="form-check-label" for="clr1">
+                                                        Gold
+                                                    </label>
+                                                </div>
+
+                                                <div class="offset-1 offset-lg-0 col-5 col-lg-4 form-check">
+                                                    <input class="form-check-input" type="radio" name="clrradio" id="clr2">
+                                                    <label class="form-check-label" for="clr2">
+                                                        Silver
+                                                    </label>
+                                                </div>
+
+                                                <div class="offset-1 offset-lg-0 col-5 col-lg-4 form-check">
+                                                    <input class="form-check-input" type="radio" name="clrradio" id="clr3">
+                                                    <label class="form-check-label" for="clr3">
+                                                        Graphite
+                                                    </label>
+                                                </div>
+
+                                                <div class="offset-1 offset-lg-0 col-5 col-lg-4 form-check">
+                                                    <input class="form-check-input" type="radio" name="clrradio" id="clr4">
+                                                    <label class="form-check-label" for="clr4">
+                                                        Pacific Blue
+                                                    </label>
+                                                </div>
+
+                                                <div class="offset-1 offset-lg-0 col-5 col-lg-4 form-check">
+                                                    <input class="form-check-input" type="radio" name="clrradio" id="clr5">
+                                                    <label class="form-check-label" for="clr5">
+                                                        Jet Black
+                                                    </label>
+                                                </div>
+
+                                                <div class="offset-1 offset-lg-0 col-5 col-lg-4 form-check">
+                                                    <input class="form-check-input" type="radio" name="clrradio" id="clr6">
+                                                    <label class="form-check-label" for="clr6">
+                                                        Rose Gold
+                                                    </label>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <!-- 2nd col -->
+
+                                        <!-- 3rd col -->
+                                        <div class="col-12 col-lg-4">
+                                            <div class="row">
+
+                                                <div class="col-12 ">
+                                                    <label class="form-label fw-bold lbl1">Add Product Quantity</label>
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <input type="number" class="form-control" value="0" min="0" id="qty"/>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <!-- 3rd col -->
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <hr class="hr-break-1" />
+                                </div>
+                                <!-- 3rd row -->
+
+                                <!-- 4th row -->
+                                <div class="col-12 mb-3">
+                                    <div class="row">
+
+                                        <!-- 1st col -->
+                                        <div class="col-12 col-lg-6">
+                                            <div class="row">
+
+                                                <div class="col-12">
+                                                    <label class="form-label fw-bold lbl1">Cost Per Item</label>
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <div class="input-group pt-3">
+                                                        <span class="input-group-text">Rs.</span>
+                                                        <input type="text" class="form-control" aria-label="Amount (to the nearest rupee)" id="cost"/>
+                                                        <span class="input-group-text">.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 1st col -->
+
+                                        <!-- 2nd col -->
+                                        <div class="col-12 col-lg-6">
+                                            <div class="row">
+
+                                                <div class="col-12 ">
+                                                    <label class="form-label fw-bold lbl1">Approved Payment Methods</label>
+                                                </div>
+
+                                                <div class="col-12 ">
+                                                    <div class="row">
+
+                                                        <div class="offset-2 col-2">
+                                                            <img src="resources/payments/visa.svg" class="img-fluid" style="width: 100px;"/>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <img src="resources/payments/mastercard.svg" class="img-fluid" style="width: 100px;"/>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <img src="resources/payments/amex.svg" class="img-fluid" style="width: 100px;"/>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <img src="resources/payments/maestro.svg" class="img-fluid" style="width: 100px;"/>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <!-- 2nd col -->
+
+
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <hr class="hr-break-1" />
+                                </div>
+                                <!-- 4th row -->
+
+                                <!-- 5th row -->
+                                <div class="col-12 mb-3">
+                                    <div class="row">
+
+                                        <div class="col-12 ">
+                                            <label class="form-label fw-bold lbl1">Delivery Cost</label>
+                                        </div>
+
+                                        <!-- 1st col -->
+                                        <div class="col-12 col-lg-6">
+                                            <div class="row">
+
+                                                <div class="col-12 offset-lg-1 col-lg-3">
+                                                    <label> Delivery Cost Within Colombo</label>
+                                                </div>
+                                                <div class="col-12 col-lg-8">
+                                                    <div class="input-group">
+                                                        <span class="input-group-text">Rs.</span>
+                                                        <input type="text" class="form-control" aria-label="Amount (to the nearest rupee)" id="dwc"/>
+                                                        <span class="input-group-text">.00</span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <!-- 1st col -->
+
+                                        <!-- 2nd col -->
+                                        <div class="col-12 col-lg-6">
+                                            <div class="row">
+
+                                                <div class="col-12 offset-lg-1 col-lg-3">
+                                                    <label> Delivery Cost Out of Colombo</label>
+                                                </div>
+                                                <div class="col-12 col-lg-8">
+                                                    <div class="input-group">
+                                                        <span class="input-group-text">Rs.</span>
+                                                        <input type="text" class="form-control" aria-label="Amount (to the nearest rupee)" id="doc"/>
+                                                        <span class="input-group-text">.00</span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <!-- 2nd col -->
+
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <hr class="hr-break-1" />
+                                </div>
+                                <!-- 5th row -->
+
+                                <!-- 6th row -->
+                                <div class="col12 mb-3">
+                                    <div class="row">
+
+                                        <div class="col-12">
+                                            <label class="form-label fw-bold lbl1">Product Description</label>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <textarea class="form-control" cols="30" rows="25" id="description"></textarea>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <hr class="hr-break-1" />
+                                </div>
+                                <!-- 6th row -->
+
+                                <!-- 7th row -->
+                                <div class="col-12 mb-3">
+                                    <div class="row">
+
+                                        <div class="col-12">
+                                            <label class="form-label fw-bold lbl1">Add Product Iages</label>
+                                        </div>
+
+                                        <div class="offset-lg-3 col-12 col-lg-6">
+                                            <div class="row">
+
+                                                <div class="col-4 border rounded border-secondary border-opacity-50">
+                                                    <img class="img-fluid" src="resources/system/addproductimg.svg" style="width: 250px;"/>
+                                                </div>
+
+                                                <div class="col-4 border rounded border-secondary border-opacity-50">
+                                                    <img class="img-fluid" src="resources/system/addproductimg.svg" style="width: 250px;"/>
+                                                </div>
+
+                                                <div class="col-4 border rounded border-secondary border-opacity-50">
+                                                    <img class="img-fluid" src="resources/system/addproductimg.svg" style="width: 250px;"/>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="offset-lg-3 col-12 col-lg-6 mt-3">
+                                            <input class="d-none" type="file" accept="img/*" id="imageuploader" multiple/>
+                                            <label class="col-12 btn btn-secondary shadow-none" for="imageuploader">Upoad Image</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <hr class="hr-break-1" />
+                                </div>
+                                <!-- 7th row -->
+
+                                <!-- 8th row -->
+                                <div class="offset-lg-4 col-12 col-lg-4 d-grid mb-3 mt-2">
+                                    <button class="btn btn-success fw-bold shadow-none">Add Product</button>
+                                </div>
+                                <!-- 8th row -->
+                </div>
+            </div>
+            <!-- page content -->
+
+
+            <!-- footer -->
+            <div
+                class="navbar bg-light position-static border-0 border-top border-1 border-secondary border-opacity-25">
+                <div class="container-fluid justify-content-center mt-1">
+                    <p class="text-center">&copy; 2022 NewTech.lk | All Right Reserved.</p>
+                </div>
+            </div>
+            <!-- footer -->
+
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll(
+            '[data-bs-toggle="tooltip"]'
+        );
+        const tooltipList = [...tooltipTriggerList].map(
+            (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+        );
+    </script>
+</body>
+
+</html>
